@@ -1,0 +1,23 @@
+---
+import { getLangFromUrl, useTranslations } from 'i18n/utils';
+
+import Button from '@components/ui/Button.astro';
+import Social from '@components/ui/Social.astro';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section
+	data-testid="contact"
+	id="contact"
+	class="flex flex-col flex-wrap items-center justify-center gap-8 text-black dark:text-white lg:mb-0 lg:h-screen"
+>
+	<Button size={'lg'} style={'primary'} name="Contact">
+		<a href={'mailto:wojciech.kubik1993@gmail.com'}>{t('contact.button')}</a>
+	</Button>
+	<hr class="w-1/2" />
+	<div class="flex flex-row gap-8 lg:flex lg:flex-row lg:gap-20">
+		<Social />
+	</div>
+</section>
