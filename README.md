@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# portfolio-astro
-=======
 💫 This is a free template to make your portfolio website using **[Astro 2.0](https://astro.build/blog/astro-2/) + [Tailwind CSS](https://tailwindcss.com/)**.
 
 ### Dark mode
@@ -113,4 +110,3 @@ That would be very useful for all of us and we would be happy to listen and take
 ## Credits
 
 Assets designed by (Freepik)[www.freepik.com].
->>>>>>> 83a917e4b09ad2da26121e850c3ec60466e6b4ae
