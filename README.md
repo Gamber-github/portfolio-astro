@@ -110,4 +110,3 @@ That would be very useful for all of us and we would be happy to listen and take
 ## Credits
 
 Assets designed by (Freepik)[www.freepik.com].
->>>>>>> 83a917e4b09ad2da26121e850c3ec60466e6b4ae
