@@ -1,0 +1,23 @@
+---
+import { getLangFromUrl, useTranslatedPath } from 'i18n/utils';
+import { languages } from '../i18n/ui';
+
+import '/node_modules/flag-icons/css/flag-icons.min.css';
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+---
+
+{
+    
+	Object.entries(languages).map(([lang, label]) => (
+		<>
+			<a
+				href={translatePath('/', lang)}
+				class="flex py-2 text-black gap-2 hover:text-orange dark:text-white dark:hover:text-orange lg:px-3"
+			>
+				<span class={`fi fi-${lang}`} /> {label}
+			</a>
+		</>
+	))
+}
